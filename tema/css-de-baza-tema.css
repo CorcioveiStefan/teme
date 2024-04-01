@@ -1,0 +1,147 @@
+p,
+li,
+div {
+  color: #222;
+}
+.teorie {
+  font-family: "Reddit Mono", monospace;
+}
+
+.font-weight-examples {
+  font-weight: bold;
+}
+
+.font-weight-examples p {
+  font-weight: bold;
+}
+
+.font-weight-examples p ~ p {
+  font-weight: normal;
+}
+
+.font-weight-examples p + p + p {
+  font-weight: inherit;
+  color: green;
+}
+
+.ex-px {
+  font-size: 20px;
+}
+
+.ex-em {
+  font-size: 1;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.serif-sans {
+  font-size: 30px;
+}
+
+.serif,
+.serif-sans li {
+  font-family: serif;
+}
+
+.sans-serif,
+.serif-sans li + li {
+  font-family: sans-serif;
+}
+
+.padding-ex {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+
+  /* Punem chenar pt demonstrarea diferentei dintre margin si padding */
+  border: 1px solid red;
+}
+
+.margin-ex {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+
+  /* Punem chenar pt demonstrarea diferentei dintre margin si padding */
+  border: 1px solid red;
+}
+
+.ex-lh {
+  line-height: 0.85;
+}
+
+.ex-shadow {
+  text-shadow: 2px 2px 3px red;
+}
+
+ul li {
+  list-style: none;
+}
+
+.patrat {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.dreptunghi {
+  border: 1px solid red;
+  width: 30vw;
+  height: 20vw;
+}
+
+/* De aici incepe tema*/
+h1,
+h2,
+h3 {
+  font-family: sans-serif;
+}
+h2 {
+  color: #262626;
+  margin-top: 60px;
+}
+h3 {
+  color: #444444;
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+.exemple {
+  background-color: #ededed;
+  padding: 10px;
+  line-height: 2;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h3 + p {
+  font-weight: bold;
+}
+
+.cadru_link {
+  margin: auto;
+  width: 100px;
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.cadru_link:hover {
+  color:rgb(0, 128, 126);
+}

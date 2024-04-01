@@ -1,0 +1,49 @@
+/*pentru a nu exista conflicte intre exemple 
+am creat <div>  in html si le am dat clase proprii,
+unice ce se pot regasi la inceputul selectorilor*/
+h5 {
+  color: green;
+}
+div.masa_unu h1 {
+  color: rgb(255, 0, 0);
+}
+div.masa_doi h2 {
+  color: rgb(50, 0, 255);
+}
+div.masa_trei #farfurie_sofisticata {
+  color: rgb(255, 0, 0);
+}
+div.masa_patru h1 i {
+  color: rgb(50, 0, 255);
+}
+div.masa_cinci #farfurie_sofisticata2 cite {
+  color: rgb(255, 0, 0);
+}
+div.masa_sase .mic {
+  color: rgb(50, 0, 255);
+}
+div.masa_sapte kbd.mic {
+  color: rgb(255, 0, 0);
+}
+div.masa_opt h2 > kbd.mic {
+  color: rgb(50, 0, 255);
+}
+div.masa_noua h1,
+div.masa_noua h2 {
+  color: rgb(255, 0, 0);
+}
+div.masa_zece * {
+  color: rgb(50, 0, 255);
+}
+div.masa_unsprezece h1 * {
+  color: rgb(255, 0, 0);
+}
+div.masa_doisprezece h1 + i {
+  color: rgb(50, 0, 255);
+}
+div.masa_treisprezece h2 ~ cite {
+  color: rgb(255, 0, 0);
+}
+div.masa_paisprezece h1 > i {
+  color: rgb(50, 0, 255);
+}

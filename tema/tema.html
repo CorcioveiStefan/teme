@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tema CSS02</title>
+    <link rel="stylesheet" href="./css-de-baza-tema.css">
+
+</head>
+
+<body>
+    <h1>Proprietati CSS 02</h1>
+    <h2>Proprietati Modificare Text</h2>
+    <h3>Font-weight</h3>
+    <p>font-weight defineste grosimea textului</p>
+    <p>Are valori numerice ( 100, 200, 300, 400, 500, 600, 700, 800, 900)</p>
+    <p>100 inseamna cel mai subtire text, 900 cel mai ingrosat</p>
+    <p>Mai poate primi valori precum "light", "normal" sau "bold" - in functie de font.</p>
+    <div class="exemple">
+        <p>Exemplu 1 fw</p>
+        <p>Exemplu 2 fw</p>
+        <p>Exemplu 3 fw</p>
+    </div>
+    <h3>Font Size</h3>
+    <p>Altereaza marimea textului.</p>
+    <p>Posibile unitati de masura:</p>
+    <ul class="exemple">
+        <li class="ex-px">Px - Unitate de masura in pixeli</li>
+        <li class="ex-em">Em - Unitate de masura relativa la parinte (multipli de 1, unde 1=marimea parintelui)</li>
+        <li class="ex-rem">Rem - Unitate de masura relativa la root element(root element = html) unde 1= aceeasi marime
+            cu root</li>
+    </ul>
+    <p>Unitati de masura mai putin folosite:</p>
+    <ul>
+        <li>% - Procent din font size-ul parintelui, 100% = 1em</li>
+        <li>vw - Procent din latimea browserului, 100vw = un browser intreg</li>
+        <li>vh - Procent din inaltimea browserului, 100vw = un browser intreg</li>
+    </ul>
+
+    <h3>Line Height</h3>
+    <p>Line-height ne spune inaltimea unui rand de text (unei linii) incluzand spatiul. Un line-height mai mare nu va
+        face un font-size mai mare.</p>
+    <p>Se exprima in aceleasi unitati precum mai sus. Bineinteles, unitatile se vor putea folosi si la alte proprietati
+        pe viitor.</p>
+    <div class="exemple">
+        <p class="ex-lh">Acesta este un exemplu de text cu line-height prea mic. <br />
+            Aici am nevoie de un break rule, br, pentru ca daca as punte "p" ar avea "margin". <br />
+            Daca am avea margin vertical, spatiere, ar fi mult prea greu de observat line-height.</p>
+    </div>
+
+
+    <h3>Text Decoration</h3>
+    <p>Decoreaza textul. In general folosim <span class="underline">underline</span> <span
+            class="overline">overline</span>, <span class="line-through">line-through</span> si none pt a scoate
+        tecoration-ul.</p>
+    <ul class="exemple">
+        <li class="overline">overline</li>
+        <li class="underline">underline</li>
+        <li class="line-through">line-through</li>
+    </ul>
+
+    <h3>Font Family</h3>
+    <p>font-family reprezinta cum arata caracterele.</p>
+    Familii de fonturi:
+    <ul class="exemple">
+        <li class="serif">Serif</li>
+        <li class="sans-serif">Sans-serif</li>
+    </ul>
+    <p> Un text poate avea o insiruire de font-families in functie de care sunt disponibile sau nu pe device, incarcate
+        sau nu. Aceste font-families sunt specificate cu apostroafe si sunt separate prin virgula. </p>
+
+    <h3>Custom Fonts</h3>
+    <p>Fonturi create de designeri sau cumparate online, acestea trebuie prima data incarcate in website, pentru ca nu
+        putem sa ne bazam ca utilizatorul le va avea instalate pe device.</p>
+    <p>Pentru a le folosi, recurgem la regula <b>@font-face</b></p>
+    <p>Pentru fonturi vom folosi in general Google Fonts.</p>
+
+    <h3>Text-Shadow</h3>
+    <p>Afiseaza o umbra sub un text, i se da un offset (spatiu) orizontal, unul vertical, marimea umbrei(cat este de
+        intinsa) si o culoare dorita.</p>
+
+    <div class="exemple">
+        <span class="ex-shadow">text-shadow: 2px 2px 3px red;</span>
+    </div>
+
+    <hr class="sfarsit-sectiune" />
+    <h2>Spacing & shaping</h2>
+    <h3>Box Model</h3>
+
+    <p>Avem 2 tipuri principale de spatiere. Margin- Spatierea din afara elementului, Padding: Spatierea din interiorul
+        elementului.</p>
+    <p>Acestea pot fi vazute in dev tools, margin portocaliu, padding: verde</p>
+
+    <p>Padding si margin pot fi exprimate in px, vw, vh, procent (care se raporteaza la latimea parintelui) cat si em si
+        rem.</p>
+    <p class="padding-ex">Acestea pot fi declarate separat, explicit, precum pe elementul acesta (vezi CSS)</p>
+    <p class="margin-ex">La fel si la margin, spatierile per directie pot fi declarate separat, explicit, precum pe
+        elementul acesta (vezi CSS)</p>
+    <p>Putem atat la padding cat si la margin fie o valoare, 2 sau 4, care vor fi un shorthand notation in felul
+        urmator: <br />
+        1: inseamna peste tot <br />
+        2: inseamna prima valoare sus-jos, a doua stanga-dreapta <br />
+        4: inseamna pe rand, sus dreapta jos stanga (mai greu de retinut poate)
+    </p>
+    <p>La <b>Margin</b> putem da valoarea orizontala "auto" atunci cand un obiect are width, si acesta se va centra.</p>
+
+    <h3>Width & Height</h3>
+    <p>Proprietatile acestea specifica dimensiunile unei "cutii" sau ale unui element. Pot fi folosite unitatile de mai
+        sus, px, %, vw, vh, em, rem.</p>
+
+    <div class="patrat">400x400 pixeli</div>
+    <br/>
+    <div class="dreptunghi">30x20 vw</div>
+    <br/>
+    
+<a class="cadru_link" href="#" ><button>La Inceput</button></a>
+
+</body>
+
+</html>
