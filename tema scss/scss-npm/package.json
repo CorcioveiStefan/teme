@@ -1,0 +1,14 @@
+{
+  "author"  : "pghiran",
+  "license" : "MIT",
+  "description" : "Simple SCSS compiler based on https://medium.com/@brianhan/watch-compile-your-sass-with-npm-9ba2b878415b width CSS minifier",
+  "devDependencies": {
+    "node-sass"     : "*",
+    "nodemon"       : "*",
+    "clean-css-cli" : "*"
+  },
+  "scripts": {
+    "build-css" : "node-sass --include-path scss style.scss style.css && cleancss  -o style.min.css style.css",
+    "watch-css" : "nodemon -e scss -x \"npm run build-css\""
+  }
+}
