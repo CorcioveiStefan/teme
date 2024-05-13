@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/jpeg;base64,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"
+      sizes="32x32"
+    />
+    <title>Primaria Bucuresti</title>
+    <script
+      src="https://kit.fontawesome.com/64951f6fcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="Primaria-Bucuresti.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+
+    <div class="top-header py-2">
+      <!--container top-header clasa principala nu este utilitara
+                  py-2 defineste padding pe axa verticala-->
+
+      <div class="container">
+        <!--diviziune in interiorul top-header cu o clasa utilitara container 
+      clasa va da latimi fixe in functie de viewport size 
+      centrare orizontala seteaza margin left,right pe auto
+      padding left,right by default, daca nu vrem margin dam container-fluid-->
+
+        <div class="row">
+          <!--diviziune care defineste un rand in container, by default acesta 
+          are 12 coloane care se pot imparti la div uri, asezarea orizontala pleaca 
+        din stanga si vericala de la mijloc justify-content si align-items-->
+          <div class="col-9 col-sm-8 col-md-9 col-lg-9">
+            <!-- aici incepe primul div din primul row col-9 este intinderea pe 
+            extrasmall adica sub 576px, col-sm-8 spune pentru ecrane mici adica 
+            576-768px, col-md-9 medii, adica 768-992px, si col-lg-9 pentru large screen, 
+            992-1200px, col-xl get by default 9 col pentru ca col-lg-9 spune ca de la 
+            ecran large in sus trebuie aplicat  
+            acesta are 6 elemente din care primele trei dispar (migreaza) urmatorul va disparea complet 
+            fiind o rezerva in footer iar ultimele doua raman in divul lor-->
+            <img
+              src="https://www.pmb.ro/assets/img/city.png"
+              alt="logo"
+              class="d-none d-md-inline"
+            />
+            <!--clasa d-none combinat cu d-md-inline-block spune pozei sa nu apara pana 
+            la ecrane medii (atentie clasele se gandesc de la mic la mare) iar la acestea
+            din urma sa apara inline-block-->
+            <a href="#" class="d-none d-md-inline mx-1"> Orașul </a>
+            <!--vezi linia 40-->
+            <a
+              href="https://www2.pmb.ro/"
+              target="_blank"
+              class="d-none d-md-inline mx-1 migratorii"
+            >
+              Versiune anterioară
+            </a>
+            <!--vezi linia 40 plus mx-2 adica margin pe axa orizontala cu o unitate prestabilita 
+            in bootstrap plus o clasa migratorii pentru o comanda in css-->
+            <a
+              href="#"
+              target="_self"
+              class="d-none d-md-inline mx-2 migratorii"
+            >
+              <b> Contact </b>
+            </a>
+            <!--vezi linia 54-->
+            <a href="https://fiipregatit.ro" target="_blank" class="mx-2">
+              <b>FiiPregatit.ro</b>
+            </a>
+            <a
+              href="https://nutremurlacutremur.ro"
+              target="_blank"
+              class="mx-2"
+            >
+              <b>NuTremurLaCutremur.ro</b>
+            </a>
+          </div>
+          <!--aici se incheie primul div din primul row -->
+
+          <div class="text-right col-3 col-sm-4 col-md-3 col-lg-3">
+            <!--aici incepe al doilea div din primul row unde clasa text-right va inpinge textul din 
+            div catre dreapta iar comenzile de col vor vi in opozitie fata de cele din vezi linia 34-->
+            <a class="search-icon d-none d-md-inline-block" href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <!--clasele din acest i sunt fac parte dintr o librarie si sunt linkuite in head pentru 
+              a crea un caracter nou-->
+            </a>
+            <!--primul link din divul doi are clasa CSS search si clase utilitare prima spune ca 
+            elementul nu va fi afisat pe ecrane mici a doua ca elementul va fi afisat de la ecrane medii
+            in sus-->
+            <a href="#" class="mx-2 mx-md-3">
+              <b>B/W</b>
+            </a>
+            <!--acesta este singurul element care ramane pe al doilea div din rowul unu si are mx-2 margin 
+            pe axa orizontala 2 masuri pe ecrane mici si de la medium in sus marginul are trei masuri 
+            pentru a inpinge elementele care revin pe linie pentru aspect-->
+            <span class="d-none d-md-inline-block">
+              <a href="#" class="">A</a>
+              <a href="#" class="">A</a>
+              <a href="#" class="">A</a>
+            </span>
+            <!--nu se afiseaza pe ecrane mici pe ecranele mediu-up are comportament in div ul din care 
+            face parte de inline-block-->
+          </div>
+          <!--aici se incheie divul doi din primul row-->
+        </div>
+        <div class="row">
+          <!--row 2 din container vezi linia 30-->
+          <div class="col-10 d-md-none mt-2">
+            <!--primul div va afisa primele trei din sase elemente ce migreaza aparent din row1 div1  dar in
+            realitate sunt scrise din nou in acest div si ascunse dupa caz si un element extra
+            acesta are clasa d-md-none ce ii spune sa nu apara de la medium in sus si mt 2 masuri-->
+            <img src="https://www.pmb.ro/assets/img/city.png" alt="logo" />
+            <a href="#"> Orașul </a>
+            <a
+              href="https://www2.pmb.ro/"
+              target="_blank"
+              class="mx-2 d-inline-block"
+            >
+              Versiune anterioară
+            </a>
+            <!--acesta are o clasa utilitara d-inline-block pt situatia in care rezolutia este 
+          foarte scazuta sa coboare tot scrisul, nu sa se rupa, din motive de aspect si margin
+          orizontal pentru ca este un element din mijloc si din nou conteaza aspectul-->
+            <a href="#" class="d-inline-block"> Întrebări frecvente </a>
+            <!--vezi linia 123 -->
+          </div>
+
+          <div class="col-2 text-right d-md-none mt-2">
+            <!--acest div ocupa restul de spatiu de pe row2, textul va fi afisat in dreapta si vezi
+          linia 123-->
+            <a class="search mx-2" href="#">
+              <i class="fa-solid fa-magnifying-glass"> </i>
+            </a>
+            <!--acest link are clasa CSS search si pading identic cu elementul de pe row de deasupra lui-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+
+    <nav class="navbar">
+      <!--navigatia ce are clasa ce poata fi utilitara botstrap dar nu in cazul de fata si div ul semantic 
+      nav -->
+      <div class="navbar-brand">
+        <img src="https://www.pmb.ro/assets/img/logo-blue.png" alt="LOGO" />
+      </div>
+      <!--primul div contine logo ul si clasa navbar-brand-->
+      <input type="checkbox" id="navbar-toggle" class="navbar-toggle" />
+      <label for="navbar-toggle" class="navbar-icon">&#9776;</label>
+      <!--input si label .navbar-toogle .navbar-icon
+      primul e casuta unde se bifeaza al doilea e labelul care inlocuieste casuta cu &#9776;
+      sunt conectate prin id/for si au media q pt navbar in CSS-->
+      <div class="navbar-items">
+        <a href="#">Executivul</a>
+        <a href="#">Consiliul general</a>
+        <a href="#">Buget</a>
+        <a href="#">Interes public</a>
+        <a href="#">Autorizatii si avize</a>
+        <a href="#">Programe si Strategii</a>
+        <a href="#">Structuri Asociative</a>
+        <a href="#">Subordonate</a>
+        <a href="#">Monitorul Oficial</a>
+      </div>
+      <!--acestea sunt linkurile din navigatie  -->
+    </nav>
+    <!--aici se incheie navigatia, este simpla si aici primeaza Css ul -->
+    <!--OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+    <section class="section-one">
+      <div class="banner"></div>
+      <div class="container continut px-5">
+        <div class="row justify-content-center g-3">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="card text-center h-100 w-100">
+              <a href="#"
+                ><i class="fa-solid fa-credit-card fa-3x pt-3"></i><br />Plăţi
+                şi Depuneri Online</a
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="card text-center h-100 w-100">
+              <a href="#"
+                ><i class="fa-solid fa-road fa-3x pt-3"></i><br />Proiecte în
+                execuție</a
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="card text-center h-100 w-100">
+              <a href="#"
+                ><i class="fa-solid fa-circle-info fa-3x pt-3"></i><br />Interes
+                Public L544/2001</a
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="card text-center h-100 w-100">
+              <a href="#"
+                ><i class="fa-solid fa-handshake-simple fa-3x pt-3"></i
+                ><br />Monitorul Oficial al Municipiului București</a
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="card text-center h-100 w-100">
+              <a href="#"
+                ><i class="fa-solid fa-coins fa-3x pt-3"></i><br />Taxe
+                Locale</a
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="card text-center h-100 w-100">
+              <a
+                href="https://www3.pm.ro/institutii/cgmb/dezb_publica/proiecte"
+                target="_blank"
+                ><i class="fa-solid fa-list-check fa-3x pt-3"></i><br />Proiecte
+                Supuse Dezbaterii Publice</a
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="card text-center h-100 w-100">
+              <a
+                href="https://www3.pmb.ro/interes-public/contracte"
+                target="_blank"
+                ><i class="fa-solid fa-paperclip fa-3x pt-3"></i><br />Contracte
+                PMB</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+      <div class="continut-2">
+        <h3>Comunicate de Presa</h3>
+        <div class="container">
+          <!--in div ul continut 2 am introdus acest div cu proprietatile clasei utilitare container dar atentie 
+        aceasta este mai degraba o scara structurala care se foloseste si inafara bootstrap-->
+          <div class="box box1">
+            <a href="#" class="image-link">
+              <div class="image-container">
+                <div class="overlay">
+                  <h2 class="title">
+                    „STRĂZI DESCHISE, BUCUREȘTI - PROMENADĂ URBANĂ” CONTINUĂ ÎN
+                    WEEKEND PE CALEA VICTORIEI
+                  </h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--aici putem vedea o cutie, sunt trei la numar si sunt identice ca format, fiecare are o clasa box 
+          comuna si o clasa proprie box1,box2,box3 in interiorul boxului pentru comportament a fost adaugat un 
+          link cu clasa .image-link , in link este un div .image-container iar acesta din urma contine un div 
+          .overlay cu titlu .titlu in el.
+          scopul overley este de a nu octura imaginea pusa in CSS ca backround si scopul link ului e de a face 
+          tot boxul sa raspunda la click  -->
+          <div class="box box2">
+            <a href="#" class="image-link">
+              <div class="image-container">
+                <div class="overlay">
+                  <h2 class="title">
+                    Expozția „Universul lui Salvador Dalí” continuă până la 1
+                    septembrie
+                  </h2>
+                  <p>Ca urmare a succesului masiv..</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--vezi linia 259-->
+          <div class="box box3">
+            <a href="#" class="image-link">
+              <div class="image-container">
+                <div class="overlay">
+                  <h2 class="title">Încep lucrările la Hanul Solacolu</h2>
+                  <p>Bucureşti, Cristian Hiver: ”Am căutat soluția optimă..</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--vezi linia 259-->
+        </div>
+        <!--OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+        <h3>De actualitate</h3>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text"
+              >07.05.2024 - Anunț privind organizarea consultărilor cu
+              acționarii pentru definitivarea proiectului Scrisorii de așteptări
+              întocmit pentru societatea Trustul de Clădiri Metropolitane
+              București SA.</span
+            >
+            <i class="fa-solid fa-angle-right fa-2x"></i>
+          </a>
+        </div>
+        <!--avem un div ce are clasa custom link-button-container in div e un link ce va da functionalitate 
+        ce are clasa link-button iar in link e un span ce are clasa button-text si un caracter speciat de pe 
+        font awesome ce are clasa utilitara fa-2x unde 2x mareste
+        toate clasele sunt custom si explicatia e valabila pt urmatoarele 2 div uri -->
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text"
+              >Anunț - PRIVIND DEMARAREA INVESTIGAȚIILOR DE TEREN PENTRU
+              REALIZAREA DRUMULUI RADIAL 1 - VEST EXPRESS</span
+            >
+            <i class="fa-solid fa-angle-right fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text"
+              >20.02.2024 - Am publicat forma grafica a proiectului de buget
+              pentru anul 2024</span
+            >
+            <i class="fa-solid fa-angle-right fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+    <section class="section-two">
+      <div class="left-content">
+        <div class="left-title-wrapper">
+          <a class="left-link" href="#" target="_self">
+            <span>Executivul</span>
+          </a>
+        </div>
+        <div class="left-middle">
+          <div class="left-middle-content">
+            <div class="left-middle-space"></div>
+            <div class="left-middle-title pt-2">
+              <span>Primar General</span>
+              <h4>Nicusor Dan</h4>
+              <div class="link-button-container">
+                <a class="link-button" href="#" target="_self">
+                  <span class="button-text">Mai Mult</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text"
+              >Viceprimar General Stelian Bujduveanu</span
+            >
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <div class="right-title-wrapper">
+          <a class="right-link" href="#" target="_self">
+            <span>Consiliul General al Capitalei</span>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Regulament Functionare</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Lista Consilieri Generali</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Grupuri Politice</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Comisii de specialitate</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Comisii speciale</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Acte normative</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Ordinea de zi</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="link-button-container">
+          <a class="link-button" href="#" target="_self">
+            <span class="button-text">Sedinte de dezbatere publica</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="doi">
+      <h1>ANDHAR CONSTRACSHAN</h1>
+      <h1>LOUDING [|||.......] (30%)</h1>
+    </section>
+  </body>
+</html>
