@@ -1,51 +1,47 @@
 * {
   box-sizing: border-box;
 }
-
 * .child {
   padding: 0;
   margin: 0;
 }
-
+h3 {
+  display: inline;
+  padding-left: 8%;
+  line-height: 2em;
+}
+/* primele trei com se aplica pe tot css-ul */
+/* aici incepe top-header ul 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 .top-header a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-
 }
-
 .top-header {
   background-color: #266e99;
   
 }
-
 .text-right {
   text-align: end;
 }
-
 b {
   padding: 0 5px;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
-
 img {
   height: 2em;
 }
-
 .migratorii {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
-
 span a:first-child {
   font-size: 0.6rem;
 }
-
 span a:nth-child(2) {
   font-size: 0.8rem;
 }
-
 span a:last-child {
   font-size: 1rem;
 }
@@ -53,6 +49,7 @@ span a:last-child {
   font-size: small;
   opacity: 0.7;
 }
+/* aici incepe navbar-ul000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 .navbar {
   width: 100%;
   display: flex;
@@ -67,18 +64,15 @@ span a:last-child {
   z-index: 999;
   box-shadow: 0 0 4px 1px rgba(41, 41, 41, 0.25);
 }
-
 .navbar-brand {
   padding: 10px;
   display: inline;
 }
-
 .navbar-items {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .navbar-items a {
   max-width: 110px;
   color: #266e99;
@@ -90,21 +84,19 @@ span a:last-child {
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   border-right: 2px solid #266e99;
+  line-height: 0.9rem;
 }
 .navbar-items a:last-child {
   border-right: none;
 }
-
 .navbar-toggle {
   display: none;
 }
-
 .navbar-icon {
   color: #266e99;
   font-size: 1.5rem;
   cursor: pointer;
 }
-
 @media screen and (max-width: 831px) {
   .navbar-items {
     display: none;
@@ -113,151 +105,104 @@ span a:last-child {
     width: auto;
     padding: 10px 10px;
   }
-
   .navbar-items a {
     margin: 10px 10px;
     border: none;
     border-left: 2px solid #266e99;
     height: 2.5rem;
     align-content: center;
-    text-align:start ;
-    
+    text-align:start ;  
   }
-
   .navbar-toggle:checked + .navbar-icon ~ .navbar-items {
     display: flex;
   }
-
   .navbar-toggle:checked + .navbar-icon {
     color: grey;
     font-size: 1.25rem;
   }
-
   .navbar {
     display: block;
     padding: 10px 10px;
   }
-
   .navbar-icon {
     float: right;
     position: relative;
   }
-
   .navbar-brand {
     padding-left: 40%;
   }
 }
-
 @media screen and (min-width: 831px) {
   .navbar-icon {
     display: none;
   }
 }
-
+/* aici incepe section-one 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 .banner {
   background-image: url("https://api.pmb.ro/storage/sliders/December2021/R5KWOQbDs2fYhQ1cOZTs.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
+  width:100%;
+  padding-top: 26.5%;
 }
-
 .section-one .continut {
   position: relative;
   top: -50px;
 }
-
-@media screen and (max-width: 1200px) {
-  .banner {
-    height: 250px;
-  }
-
-  .section-one .continut {
-    position: relative;
-    top: -40px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .banner {
-    height: 200px;
-  }
-
-  .section-one .continut {
-    position: relative;
-    top: -30px;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .banner {
     display: none;
   }
-
   .section-one .continut {
     padding-top: 80px;
   }
 }
-
 .section-one {
   height: auto;
   background-color: #266e99;
 }
-
 .section-one a {
   text-decoration: none;
   color: #266e99;
   padding-bottom: 10px;
 }
-
 .section-one .continut .card {
   border-radius: 0;
   max-width: 300px;
   margin: 0;
 }
-
 .section-one .card:hover {
   background-color: #f7f7f7;
 }
-
 .continut-2 .container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
 }
-
 .continut-2 h3 {
-  display: inline;
   color: white;
-  padding-left: 5%;
-  line-height: 2em;
 }
-
 .box {
   width: calc(33% - 10px);
   background-color: white;
 }
-
 @media screen and (max-width: 768px) {
   .continut-2 .container .box3 {
     display: none;
   }
-
   .box {
     width: calc(50% - 10px);
     background-color: white;
   }
-
   .continut-2 h3 {
     text-align: center;
   }
 }
-
 .image-link {
   display: block;
   text-decoration: none;
   color: inherit;
 }
-
 .box1 .image-container {
   position: relative;
   max-width: auto;
@@ -266,7 +211,6 @@ span a:last-child {
   background-size: cover;
   background-position: top center;
 }
-
 .box2 .image-container {
   position: relative;
   max-width: auto;
@@ -275,7 +219,6 @@ span a:last-child {
   background-size: cover;
   background-position: top center;
 }
-
 .box3 .image-container {
   position: relative;
   max-width: auto;
@@ -284,11 +227,9 @@ span a:last-child {
   background-size: cover;
   background-position: top center;
 }
-
 .box .overlay {
   max-height: 50%;
 }
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -298,18 +239,15 @@ span a:last-child {
   color: inherit;
   font-size: 12px;
 }
-
 .title {
   font-size: 1.2em;
   margin: 0;
 }
-
 .link-button-container {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
-
 .link-button {
   display: inline-flex;
   align-items: center;
@@ -324,30 +262,21 @@ span a:last-child {
   border-radius: 0;
   font-size: 0.8rem;
 }
-
 .button-text {
   overflow: hidden;
   text-overflow: ellipsis;
   color: white;
 }
-
 .link-button i {
   margin-left: auto;
   color: white;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-
 .link-button:hover i {
   opacity: 1;
 }
-
-#doi {
-height:1000px;
-background-color: rgb(9, 3, 63);
-color:lightblue;
-}
-
+/* aici incepe section-two00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 .section-two {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -356,14 +285,9 @@ color:lightblue;
   margin: 0 auto;
   padding: 20px; 
 }
-
 .left-content, .right-content {
-  
-  
   padding: 20px 0px;
-  
 }
-
 @media (max-width: 768px) {
   .section-two {
       grid-template-columns: 1fr; 
@@ -379,24 +303,18 @@ color:lightblue;
   margin-bottom: 20px;
 }
 .section-two .left-middle .left-middle-content{
-  
   display:grid;
   grid-template-columns: 2fr 1fr;
   position: absolute;
   width: 100%;
   height: 100%;
   top:0;
- 
 }
-
 @media (max-width: 340px) {
   .section-two .left-middle .left-middle-content{
-
     grid-template-columns: 11fr 9fr;
   }
 }
-
-
 .left-title-wrapper  .left-link  span, .right-title-wrapper  .right-link  span {
   font-size: 25px;
   color:#266e99;
@@ -408,19 +326,16 @@ color:lightblue;
 .left-title-wrapper  .left-link, .right-title-wrapper .right-link{
   text-decoration: none;
 }
-
 .section-two .left-middle .left-middle-content .left-middle-title {
   display: flex;
   flex-direction: column;
   align-items: left;
   color: #266e99;
-  
 }
 .section-two .left-middle span {
   font-size: small;
   font-weight: 500;
 }
-
 .section-two .link-button-container {
   display: flex;
   justify-content: left;
@@ -431,7 +346,6 @@ color:lightblue;
   justify-content: center;
   white-space: nowrap;
   overflow: hidden;
-  
   max-width: 500px;
   font-size: 0.8rem;
   background-color: white;
@@ -439,7 +353,6 @@ color:lightblue;
   border: 1px solid lightgrey;
 }
 .section-two  .link-button-container .button-text{
-  
   overflow: hidden;
   text-overflow: ellipsis;
   color:#266e99;
@@ -448,13 +361,10 @@ color:lightblue;
 }
 .section-two .link-button-container i {
   color:lightgrey;
-  opacity: 1;
-  
+  opacity: 1; 
 }
-
 .section-two .link-button-container:hover i{
-  color:#266e99;
-  
+  color:#266e99; 
 }
 .section-two .link-button-container:hover .button-text {
   color:#1c4e6c
@@ -470,8 +380,282 @@ color:lightblue;
 }
 .section-two .left-middle .link-button-container:hover .link-button{
   background-color: #266e99;
-  
 }
 .section-two .left-middle .link-button-container:hover a span {
   color:white;
+}
+/* aici incepe section-three 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+.section-three {
+  background-color: rgb(235, 235, 235);
+}
+.section-three .section-three-title {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  color:#266e99;
+}
+.container-three {
+  display: flex;
+  flex-wrap: wrap;
+  padding : 0 8%;
+}
+.three-left-content { 
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 0px 16px; 
+}
+.three-right-content {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 0 10px;
+}
+@media (max-width: 992px){
+  .section-three .section3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .three-left-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0px 16px; 
+  }
+  .three-right-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+  .three-right-content .right-message {
+    margin-top: 20px;
+  }
+  .section-three .three-right-content .section1 {
+    margin-top: 10px;
+  }
+  .section-three .section2 {
+    display: none;
+  }
+}
+.three-left-content-frame {
+  background-color: white;
+  padding: 10px 8px ;
+  border: 1px solid rgb(215, 215, 215);
+}
+.message { 
+  display: inline-block;
+  width:100%;
+  text-align: center;
+  background-color: #266e99;
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+}
+.message p {
+  margin: 0;
+}
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.right-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid rgb(215, 215, 215);
+}
+.message-p,
+.chevron-down-up {
+  display: inline-block;
+}
+.message-p p {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 600;
+  color:#266e99;
+}
+.chevron-down-up i{
+  color:#dee2e6;
+  font-size: 1.5rem;
+}
+.section-three .three-right-content  img{
+  width: 100%;
+  height: 46.7%;
+}
+.section-three .three-right-content .card-title a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color:rgb(38, 110, 153);
+}
+.section-three .three-right-content .card-text {
+  color: #4f4f4f;
+  font-weight: 300;
+  font-size: 14px;
+}
+.section-three .three-right-content .card-text a {
+  color:rgb(23, 66, 92);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration:none;
+}
+.section-three .section1, .section-three .section2, .section-three .section3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid rgb(215, 215, 215);
+}
+/* aici incepe section-four 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+.section-four {
+  background-image: url("https://www.pmb.ro/assets/img/bg-image-1.jpg");
+  background-position: center;
+  background-size: cover;
+  width:100%;
+  padding-bottom: auto;
+}
+.radio-group label {
+  background-color: rgb(235, 235, 235);
+  display: inline-block;
+  padding: 5px 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border: 1px solid rgb(204, 207, 208);
+  border-top-right-radius: 15px;
+  margin-right: -4px;
+  color:rgb(38, 110, 153);
+  font-size: 14px;
+}
+.radio-group input[type="radio"] {
+  display: none;
+}
+.sub-menu-container {
+  position: relative; 
+}
+.sub-menu-option2, .sub-menu-option3, .sub-menu-option4 {
+  display: block;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  z-index: -1;  
+}
+.sub-menu-option1 {
+  position: absolute;
+  top: 100%; 
+  left: 0; 
+  display: block;
+  z-index: 1;
+}
+#option1:checked ~ .sub-menu-container .sub-menu-option1,
+#option2:checked ~ .sub-menu-container .sub-menu-option2,
+#option3:checked ~ .sub-menu-container .sub-menu-option3,
+#option4:checked ~ .sub-menu-container .sub-menu-option4 {
+  display: block; 
+  z-index: 2; 
+}
+#option2:checked ~ .sub-menu-container .sub-menu-option1,
+#option3:checked ~ .sub-menu-container .sub-menu-option1,
+#option4:checked ~ .sub-menu-container .sub-menu-option1 {
+  display:none;
+}
+input[type="radio"]:checked + label {
+  background-color: white;
+  border-bottom: 1px solid white ;
+}
+input[type="radio"]:hover + label {
+  background-color: white;
+}
+.sub-menu a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding: 4px 8px; 
+  text-decoration: none; 
+  color: #333; 
+  font-size: 14px;
+  font-weight: 400;
+}
+.sub-menu a:first-child {
+  border-top-right-radius: 20px;
+  padding-top: 16px;
+}
+.sub-menu a:last-child {
+  padding-bottom: 16px;
+}
+.sub-menu a:hover p{
+  text-decoration: underline;
+}
+.sub-menu a:hover i {
+  color:#266e99;
+}
+.sub-menu {
+  border: 1px solid rgb(204, 207, 208);
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top: none;  
+}
+.sub-menu a i {
+align-self: flex-end;
+color: lightgrey;
+font-size: 1.2rem;
+}
+.sub-menu a p {
+  width: 95%;
+  margin-bottom: 0px;
+  border-bottom: 1px solid lightgrey;
+  white-space: nowrap;       
+  overflow: hidden;          
+  text-overflow: ellipsis; 
+}
+.sub-menu a:last-child p{
+  border-bottom: none;
+}
+.section-four h3 {
+  color:white;
+}
+#doi {
+  height:1000px;
+  background-color: rgb(75, 63, 181);
+  color:lightblue;
+}
+.section-four .link-button-container .link-button{
+  background-color: white;
+  width: 100%;
+  border: 1px solid #c4c1c1;
+  
+}
+.section-four .link-button .button-text {
+  color:#266e99;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.section-four .link-button-container {
+  padding-bottom: 10px;
+} 
+.section-four .link-button:hover .button-text {
+  color:#202a73;
+}
+@media (max-width: 768px) {
+  .section-four .four-right-content {
+    position: relative;
+    top: 50%;
+  }
+  
+  .section-four {
+    padding-bottom: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .section-four {
+    padding-bottom: 65%;
+  }
 }
