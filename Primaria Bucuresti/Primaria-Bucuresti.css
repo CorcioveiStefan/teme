@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 * .child {
   padding: 0;
@@ -10,6 +11,7 @@ h3 {
   padding-left: 8%;
   line-height: 2em;
 }
+
 /* primele trei com se aplica pe tot css-ul */
 /* aici incepe top-header ul 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 .top-header a {
@@ -146,6 +148,8 @@ span a:last-child {
   padding-top: 26.5%;
 }
 .section-one .continut {
+  display: flex;
+  justify-content: center;
   position: relative;
   top: -50px;
 }
@@ -161,38 +165,55 @@ span a:last-child {
   height: auto;
   background-color: #266e99;
 }
-.section-one a {
+.section-one .card a {
+  font-size: 16px;
+  font-weight: 300;
   text-decoration: none;
   color: #266e99;
-  padding-bottom: 10px;
+  padding: 0 25px;
 }
 .section-one .continut .card {
   border-radius: 0;
-  max-width: 300px;
   margin: 0;
 }
+.section-one .continut .col-6 {
+  width: 100%;
+  max-width: 190px;
+  height: 170px;
+}
+@media ( min-width: 987px){
+  .section-one .continut .row {
+    padding: 0 8%;
+  }
+}
+@media ( min-width: 1199px){
+  .section-one .continut .row {
+    padding: 0 15%;
+  }
+}
+
 .section-one .card:hover {
   background-color: #f7f7f7;
 }
-.continut-2 .container {
+.continut-2 .container-one2 {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   padding-bottom: 50px;
 }
 .continut-2 h3 {
   color: white;
 }
 .box {
-  width: calc(33% - 10px);
+  flex-grow: 1;
   background-color: white;
 }
 @media screen and (max-width: 768px) {
-  .continut-2 .container .box3 {
+  .continut-2 .container-one2 .box3 {
     display: none;
   }
   .box {
-    width: calc(50% - 10px);
-    background-color: white;
+   flex-grow: 1;
   }
   .continut-2 h3 {
     text-align: center;
@@ -205,16 +226,16 @@ span a:last-child {
 }
 .box1 .image-container {
   position: relative;
-  max-width: auto;
-  height: 200px;
+  width:auto;
+  height: 230px;
   background-image: url("https://api.pmb.ro/storage/press-releases/April2024/hISFQXd6OKrSmCDwDXcQ.jpg");
   background-size: cover;
   background-position: top center;
 }
 .box2 .image-container {
   position: relative;
-  max-width: auto;
-  height: 200px;
+  width: auto;
+  height: 230px;
   background-image: url("https://api.pmb.ro/storage/press-releases/April2024/q3Z98cafn2S7hLzTW4KP.jpg");
   background-size: cover;
   background-position: top center;
@@ -222,7 +243,7 @@ span a:last-child {
 .box3 .image-container {
   position: relative;
   max-width: auto;
-  height: 200px;
+  height: 230px;
   background-image: url("https://api.pmb.ro/storage/press-releases/April2024/7M3UafrP5MX9UwSnYN4m.jpg");
   background-size: cover;
   background-position: top center;
@@ -276,7 +297,7 @@ span a:last-child {
 .link-button:hover i {
   opacity: 1;
 }
-/* aici incepe section-two00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+/* aici incepe section-two 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 .section-two {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -622,8 +643,8 @@ font-size: 1.2rem;
 }
 #doi {
   height:1000px;
-  background-color: rgb(75, 63, 181);
-  color:lightblue;
+  background-color: rgb(19, 220, 206);
+  color:rgb(216, 255, 23);
 }
 .section-four .link-button-container .link-button{
   background-color: white;
@@ -646,7 +667,7 @@ font-size: 1.2rem;
 @media (max-width: 768px) {
   .section-four .four-right-content {
     position: relative;
-    top: 50%;
+    top: 60%;
   }
   
   .section-four {
@@ -658,4 +679,199 @@ font-size: 1.2rem;
   .section-four {
     padding-bottom: 65%;
   }
+}
+
+
+
+.five-title-container a {
+  text-decoration: none;
+  color:#266e99;
+}
+.five-title-container {
+  margin: 30px 0px;
+}
+.section-five .card {
+  padding: 5px;
+  border-radius: 0px;
+  background-color: #266e99;
+}
+.section-five .card a  {
+  text-decoration: none;
+  color:white;
+}
+.section-five .card a h5 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.section-five .row:last-child {
+  margin-bottom: 30px;
+} 
+.section-five .card:hover {
+background-color: #1c4e6c;
+}
+
+.section-six{
+  background-color:rgb(235, 235, 235);
+}
+.section-six .img-container1 {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background-image: url("https://api.pmb.ro/storage/events/May2024/PyScS0TR8mFE86aWlUbZ.jpg");
+  background-position: top ;
+  background-size: cover;
+ }
+ .section-six .img-container2 {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background-image: url("https://api.pmb.ro/storage/events/May2024/SniQgSyc9lqLe7RmWU0b.jpeg");
+  background-position:top ;
+  background-size: cover;
+ }
+ .section-six .img-container3 {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background-image: url("https://api.pmb.ro/storage/events/March2022/25KE07iuSPuduzCcDftS.jpg");
+  background-position:top ;
+  background-size: cover;
+ }
+
+ .section-six .six-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 50px;
+ }
+ .section-six .six-container .six-box {
+  flex-grow: 1;
+  border: 1px solid rgba(0, 0, 0, 0.125)
+ }
+
+ .section-six .six-box .six-overlay{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35%;
+  background-color: white;
+ }
+ .section-six .six-box .date {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: rgb(38, 110, 153);
+  width:40%;
+  height : 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color:white;
+  border-top-right-radius: 20px;
+ }
+ .section-six .six-box .text {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width:60%;
+  padding: 0px 10px;
+ }
+ .section-six .six-box .text p {
+  white-space: nowrap;       
+  overflow: hidden;          
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color:#266e99;
+  font-weight: 700;
+ }
+
+ .section-six p {
+  margin-bottom: 0px;
+ }
+.section-six .six-continut .six-title {
+  padding : 30px 0 20px;
+  color: #266e99;
+}
+@media ( max-width:768px)
+{
+  .section-six .six-box3{
+    display: none;
+  }
+}
+ 
+.section-seven {
+  background-image: url("https://www.pmb.ro/assets/img/bg-image-2.jpg");
+  background-position: left;
+  
+}
+.section-seven h5{
+  padding: 20px;
+  color: white;
+}
+.app-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.app-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.app-item .seven-big-pic {
+  width: 100%;
+  max-width: 70px;
+  height:100%;
+  max-height: 70px;
+}
+
+.app-container .seven-pic {
+  display: flex;
+  justify-content:space-around;
+  gap: 10px;
+}
+.seven-small-pic a{
+  display: block; 
+}
+.section-seven .seven-small-pic img {
+  width:100%;
+  max-width: 60px;
+  max-height: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.section-seven .seven-title{
+padding : 30px 0 20px;
+  color: white;
+}
+.section-eight {
+  padding: 30px 0px;
+}
+
+.section-nine {
+  background-color:#4f4f4f;
+}
+.section-nine a.logo-footer img {
+  width: 150px;
+  height: auto;
+}
+.section-nine a {
+  color: white;
+  text-decoration: none;
+}
+.copyright {
+  background-color: #1f1f1f;
+  font-size: 0.75rem;
+  
+}
+.btn-scrollup {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  background-color: #266e99;
+  border-radius: 5px;
+}
+.btn-scrollup i {
+  color: white;
 }
