@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Chatbox</title>
+  <link rel="stylesheet" href="user-chatbox-tema.css">
+</head>
+<body>
+
+<div id="authorModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>Enter your name</h2>
+    <input type="text" id="authorName" placeholder="Enter your name" />
+    <button id="submitAuthor">Submit</button>
+  </div>
+</div>
+
+
+<textarea id="newMessage" placeholder="Enter your message"></textarea>
+<br/><br/>
+<button id="post">Send Message</button>
+<br/><br/>
+<div id="lista-mesaje"></div>
+
+<script src="user-chatbox-tema.js"></script>
+</body>
+</html>

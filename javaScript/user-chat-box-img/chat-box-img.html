@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch cu lista de mesaje</title>
+    <link rel="stylesheet" href="./stiluri.css">
+</head>
+
+<body>
+
+    <h1>My first real chatbox</h1>
+    <div class="container">
+        <div class="half">
+            <h3>Mesaje</h3>
+            <div id="lista-mesaje">
+                Lista de mesaje se incarca...
+            </div>
+        </div>
+        <div class="half">
+            <h3>Mesaj Nou</h3>
+            <textarea name="" id="newMessage" cols="30" rows="10"></textarea>
+            <button type="submit" id="post">Submit</button>
+            <button type="submit" id="post-authenticated">Authenticated Submit</button>
+            <input type="text" id="imageURL" placeholder="Enter image URL"> <!-- campul unde se completeaza URL ul  -->
+        </div>
+    </div>
+
+    <div class="login modal">
+        <div class="modal__content">
+            <div class="modal__header">Bine ati venit</div>
+            <label for="user">username</label><input type="text" id="user" placeholder="JeffBezos71">
+            <label for="password">parola</label><input type="text" id="password" placeholder="******">
+            <button id="submit-login">Submit Login</button>
+        </div>
+    </div>
+    <script src="scriptMesajeAsync.js"></script>
+
+</body>
+
+</html>

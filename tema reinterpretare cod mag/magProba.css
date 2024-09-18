@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(252, 252, 252);
+  font-family: Arial, sans-serif;
+}
+
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(252 , 252, 252);
+  border-top: 0;
+  background-color: rgb(243 , 243, 243) ;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+
+margin: 9px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 9px;
+  background-color: #555;
+  border-radius: 9px;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+#search-form button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background-color: #777;
+}
+
+.main {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  gap: 10px; 
+}
+
+.main .main-listaProduse h2 {
+  text-align: center;
+  color: rgb(72, 72, 72);
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.main .main-cosProduse h3 {
+  text-align: center;
+  padding: 30px 0;
+  color: rgb(72, 72, 72);
+}
+
+
+.listaProduse {
+  display :flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  border-right: 2px solid rgb(234 , 234, 234);
+  border-top: 2px solid rgb(234 , 234, 234);
+}
+
+.unProdus {
+  max-width: 180px;
+  flex: 1 1 180px;
+  background-color: rgb(246, 246, 246); 
+  border: 2px solid #ffffff; 
+  border-radius: 9px; 
+  box-shadow: 0 6px 9px rgba(3, 3, 3, 0.3); 
+  padding: 18px;
+  margin: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap : 18px;
+}
+
+.unProdus .unProdusInfo {
+  height: 180px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.6em;
+  color: rgb(3, 3, 3);
+  display: none;
+}
+
+.unProdus img {
+ width: 100%;
+ border-radius: 8px;
+}
+
+.cosProduse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cosProduse img {
+  max-width : 54px;
+}
+
+.cosProduse .butonAchizitie {
+  width: 153px;
+  margin: 15px;
+  align-self: center;
+}
+
+.cosProduse .unProdusCos {
+  background-color: rgb(255, 255, 255); 
+  border: 2px solid #ffffff; 
+  border-radius: 6px; 
+  box-shadow: 0 3px 6px rgba(3, 3, 3, 0.3); 
+  padding: 18px;
+  margin: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.totalDiv {
+  text-align: center;
+}
+
+.controale-produse {
+  display: flex;
+  justify-content: space-around;
+  padding: 27px 6px
+}
+
+.modificariInCos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modificariInCos button {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  padding-bottom: 2px;
+  margin: 15px;
+}
+
+
+

@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 252, 252);
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  gap: 10px; 
+}
+
+.main .main-listaProduse h2 {
+  text-align: center;
+  color: rgb(72, 72, 72);
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.main .main-cosProduse h3 {
+  text-align: center;
+  padding: 30px 0;
+  color: rgb(72, 72, 72);
+}
+
+
+.listaProduse {
+  display :flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  border-right: 2px dotted rgb(234 , 234, 234);
+  border-top: 2px dotted rgb(234 , 234, 234);
+}
+
+.unProdus {
+  max-width: 180px;
+  flex: 1 1 180px;
+  background-color: rgb(246, 246, 246); 
+  border: 2px solid #ffffff; 
+  border-radius: 9px; 
+  box-shadow: 0 6px 9px rgba(3, 3, 3, 0.3); 
+  padding: 18px;
+  margin: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap : 18px;
+}
+
+.unProdus .unProdusInfo {
+  height: 180px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.6em;
+  color: rgb(3, 3, 3);
+}
+
+.unProdus img {
+ width: 100%;
+ border-radius: 8px;
+}
+
+.cosProduse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cosProduse img {
+  max-width : 100px;
+}
+
+.cosProduse button {
+  width: 153px;
+  margin: 15px;
+  align-self: center;
+}
+
+.cosProduse .unProdusCos {
+  background-color: rgb(255, 255, 255); 
+  border: 2px solid #ffffff; 
+  border-radius: 6px; 
+  box-shadow: 0 3px 6px rgba(3, 3, 3, 0.3); 
+  padding: 18px;
+  margin: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.totalDiv {
+  text-align: center;
+}
+
